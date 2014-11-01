@@ -1,0 +1,286 @@
+/* GLOBAL STYLES
+-----------------*/
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Fixes the clearing of floats on child elements - 
+This class should be added to the parent element to 
+force clear the floats of the child elements */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  font-size: 16px; /
+}
+
+body {
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
+  background: url(Haftsin.jpg) no-repeat fixed;
+  background-position: 50%;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem; 
+  font-weight: 400;
+  margin: 0;
+}
+
+h2, h3, h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem; 
+  text-align: center;
+}
+
+section h2 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #9B30FF;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+  width: 80%;
+}
+
+/* HEADER
+----------*/
+header {
+  text-align: center;
+  padding: 150px 0;
+}
+
+.conta {
+  background: #9B30FF;
+  position: fixed;
+  color: white;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 18px;
+  text-decoration: none;
+}
+
+/* NAVIGATION
+-------------*/
+nav {
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 20px 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* COMMON SECTION STYLES 
+-------------------------*/
+.products,
+ {
+  background: #9B30FF;
+}
+
+.profile,
+.menu,
+.contact {
+  color: #fff;
+}
+
+/* ABOUT US
+----------------------*/
+.profile {
+  background: rgba(0, 0, 0, 0.8);
+}
+.profile h2 {
+  background: #9B30FF;
+  display: inline-block;
+  padding: 10px 20px;
+  transform: rotate(-4deg);
+  margin-bottom: 10px;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.profile h2:hover {
+  transform: rotate(4deg);
+}
+.profile .summary {
+  float: left;
+  width: 70%;
+}
+
+.profile-image {
+  width: 27%;
+  float: left;
+  padding: 4px;
+  margin-right: 3%;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+/* ----
+-------------------------------*/
+
+.item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+.item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* Products
+-------------------*/
+.products .date {
+  margin: 5px 0 20px 0;
+  font-size: 0.7rem; 
+}
+.products h3 {
+  line-height: 1.25;
+  font-size: 1rem; 
+}
+.products strong {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.products .details {
+  float: left;
+  width: 30%;
+  padding-right: 30px;
+}
+.products .description {
+  font-size: 1rem;
+  width: 70%;
+  float: right;
+}
+.products .description p:first-child {
+  margin-top: 8px;
+}
+
+.company {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem; 
+  letter-spacing: 0.08em;
+  color: #9B30FF;
+}
+
+
+
+/* Menu
+-------------*/
+.menu h4 {
+  color: #9B30FF;
+}
+
+/* CONTACT & FOOTER 
+--------------------*/
+.contact {
+  background: #111;
+}
+.contact p {
+  margin: 0;
+}
+.contact p:first-of-type {
+  margin-top: 35px;
+}
+
+.social {
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 2rem; 
+}
+.social a {
+  margin: 0 8px;
+}
+.social a:hover {
+  color: white;
+}
+
+footer {
+  clear: both;
+  font-size: 0.7rem; 
+  margin-top: 50px;
+}
+
+/*MEDIA QUERIES*/
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+ .conta {
+    display: inline;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+ .conta {
+    display: inline;
+  }
+ 
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+ 
+  .conta {
+    display: inline;
+  }
+  .profile-image {
+    float: none;
+    display:block;
+    margin:0 auto 4rem;
+    width:70%;
+  }
+  .profile .summary {
+    text-align: center;
+    float: none;
+    width: 100%; 
+  }
+}
